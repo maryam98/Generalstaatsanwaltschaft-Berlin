@@ -1,0 +1,116 @@
+package routines;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
+import org.jsoup.select.Elements;
+import org.jsoup.select.Selector.SelectorParseException;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public class HTMLManipulationTools_a {
+
+
+    /**
+     * findLinks
+     * 
+     * This method is used to return any links found in the HTML body supplied. It returns an ArrayList of HashMaps
+     * 
+     * @param body
+     * @return
+     */
+public static ArrayList<HashMap<String,String>> findLinks(String body) {
+    	
+ArrayList<HashMap<String,String>> returnVal = new ArrayList<HashMap<String,String>>();
+    	
+Document doc = Jsoup.parse(body);
+    	   	
+Elements streett = doc.select("td.street>a");
+Elements house = doc.select("td.house-numbers");
+Elements zip = doc.select("td.zip");
+if(streett.size()>0) {
+    	
+java.util.Iterator<Element> its = streett.iterator();
+java.util.Iterator<Element> ith = house.iterator();
+java.util.Iterator<Element> itz = zip.iterator();
+
+while(its.hasNext()) {
+HashMap<String,String> tmpHash = new HashMap<String,String>();
+    			Element tmpEls = its.next();
+    			Element tmpElh = ith.next();
+    			Element tmpElz = itz.next();
+    			tmpHash.put("street", tmpEls.ownText());
+    			tmpHash.put("house-numbers", tmpElh.ownText());
+    			tmpHash.put("zip",tmpElz.ownText());
+    			returnVal.add(tmpHash);
+    	
+    		}
+    	}
+    	
+    	return returnVal;
+    
+    }
+
+    
+    /**
+     * replaceLinks
+     * 
+     * This method is used to find any links matching the "inLink" and replace them with the "outLink". The link text will
+     * be replaced by the "text" parameter
+     * 
+     * @param body
+     * @param inLink
+     * @param outLink
+     * @param text
+     * @return
+     */
+    public static String replaceLinks(String body, String inLink, String outLink, String text) {
+    	
+    	Document doc = Jsoup.parse(body);
+    	
+    	try {
+    		
+    		Elements links = doc.select("a[href*="+inLink+"]");
+    	
+    		java.util.Iterator<Element> it = links.iterator();
+    	
+    		while(it.hasNext()) {
+    			Element tmpEl = it.next();
+    		
+    		
+    			tmpEl.attr("href", outLink);
+    			tmpEl.text(text);
+    	
+    		}
+    		
+    	}catch(SelectorParseException ex) {
+    		System.out.println("Broken link in file: "+inLink);
+    		return null;
+    	}
+    	
+    	
+    	return doc.html();
+    
+    }
+
+
+
+}

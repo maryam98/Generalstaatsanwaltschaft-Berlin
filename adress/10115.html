@@ -1,0 +1,666 @@
+
+<!DOCTYPE html>
+<html lang="de" xml:lang="de" xmlns="http://www.w3.org/1999/xhtml">
+
+<head profile="http://dublincore.org/documents/dcq-html/">
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<link rel="schema.DCTERMS" href="http://purl.org/dc/terms/" />
+<link rel="search" type="application/opensearchdescription+xml" title="KAUPERTS Suche" href="https://berlin.kauperts.de/opensearch.xml" />
+
+<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.kauperts.de/plz/10115" >
+
+<meta content="authenticity_token" name="csrf-param" />
+<meta content="D2yoTPrBoO69gfwely8KsaVUMu4dEjkEtxkD/+Hy2Ow=" name="csrf-token" />
+
+	<meta name="DC.description" content="Straßen, Bezirke und Ortsteile mit PLZ 10115, hausnummerngenau und mit weiterführenden Angaben im PLZ-Verzeichnis" />
+	<meta lang="de" name="description" xml:lang="de" content="Straßen, Bezirke und Ortsteile mit PLZ 10115, hausnummerngenau und mit weiterführenden Angaben im PLZ-Verzeichnis" />
+	<meta lang="de" name="title" xml:lang="de" content="10115 PLZ in Berlin - KAUPERTS" />
+	<meta name="DC.publisher" content="kaupertmedia" />
+<meta name="DC.creator" content="kaupertmedia" />
+<meta name="author" content="kaupertmedia" />
+
+<meta name="robots" content="follow,index,no-cache,noodp,noarchive" />
+
+
+<meta name="msvalidate.01" content="F28BA1DB28967499AC0931BA2E80AE0D" />
+<meta name="y_key" content="72bd645a84726b4b" />
+<meta property="fb:page_id" content="145945998763886" />
+<meta name="verification" content="63b937c3035a8c9e2111551a1f259ab5" />
+
+
+<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+<link rel="image_src" href="https://berlin.kauperts.de/externals/brand/kauperts_fb_130x110.jpg" />
+
+<link href="https://berlin.kauperts.de/stylesheets/v4_packaged.css?1652728647" media="screen" rel="stylesheet" type="text/css" />
+
+
+<script src="https://berlin.kauperts.de/javascripts/full_stack_packaged.js?1652728644" type="text/javascript"></script>
+
+
+
+<title>10115 PLZ in Berlin - KAUPERTS</title>
+
+</head>
+
+<body class="kv4 " id="zips-show">
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+
+if(Cookie.getData('mobile_preferred')==false) {
+	// do nothing
+}else{
+	offerMobile('https://m.kauperts.de/plz/10115');
+}
+
+
+//]]>
+</script>
+
+<div id="lightbox_background" class="lightbox-background" style="display:none;"></div>
+<div id="lightbox_container" class="lightbox-container" style="display:none;">
+  </div>
+<div id="growl" style="display:none;">
+	</div>
+<div id="spinner" style="display:none;"><div></div></div>
+
+<div id="header">
+	<div class="wrapper">
+
+		<h5 class="brand"><a href="/">KAUPERTS Berlin</a></h5>
+
+		<ul class="menu">
+	<li class="addresses">
+			<a href="/Adressen">Adressen</a>
+	</li>
+	<li class="zips">
+			<a href="/plz"><abbr title="Postleitzahlen" lang="de" xml:lang="de">PLZ</abbr></a>
+	</li>
+	<li class="streets">
+			<a href="/Strassenverzeichnis">Straßen</a>
+	</li>
+	<li class="districts">
+			<a href="/Bezirke">Ortsteile</a>
+	</li>
+</ul>
+
+<a href="/eintragen" class="small button-v5" id="suggest_entry">Neuer Eintrag</a>
+
+		
+<form method="get" action="/search" id="search-form" autocomplete="off">
+
+	<fieldset>
+		<label for="search-string">Suche (z.B. »restaurants mitte«)</label>
+		<input type="text" name="query" id="search-string" class="required " value="" />
+		<a href="#" id="link-to-remove" onclick="clearSearchInput();; return false;">&nbsp;</a>
+		<input type="submit" value="Finden" class="submit" id="search_submit" />
+                <div class="auto_complete" id="search_string_auto_complete"></div>
+		<div id="vicinity_parameters">
+		</div>
+	</fieldset>
+
+	<a href="#" id="toggle-search-options" onclick="toggleSearchOptions(); return false;">Berlin</a>
+	<div id="search-options" style="display:none;"></div>
+
+</form>
+
+<script type="text/javascript">
+//<![CDATA[
+
+  new Axent.SelfLabeledInput('#search-form label');
+
+  Event.observe('search-string', 'focus', function(event) {
+    $('search-options').hide();
+  });
+
+  search_string_observer = window.setInterval(LinkToRemove, 100);
+
+  // SEARCH V2
+
+  var search_form = $('search-form');
+  var path_vicinity_search = '/umkreissuche';
+  var path_search = '/search';
+  var geo_located = false;
+  var geo_location_id = '495047';
+  var lat = 'false';
+  var lng = 'false';
+  var object_name ='10115';
+  var query_str = '';
+
+  initSearchOptions(geo_location_id, object_name, query_str, lat, lng);
+
+
+//]]>
+</script>
+		<div id="user_panel">
+	<p class="not-logged-in"><a href="/registrieren" class="register">Neu registrieren</a> oder <a href="/login" class="login">einloggen</a></p>
+</div>
+
+
+	</div>
+</div>
+
+<div id="content_header">
+	<div class="wrapper">
+        
+	<div class="c_16 clearfix">
+		<div class="grid_16">
+
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+				<span typeof="v:Breadcrumb">
+					<a href="/" property="v:title" rel="v:url">Berlin</a>				</span>
+				<span typeof="v:Breadcrumb">
+          <a href="/plz" property="v:title" rel="v:url"><abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr>&#8209;Verzeichnis</a>				</span>
+				<span typeof="v:Breadcrumb">
+          <a href="/plz/10" property="v:title" rel="v:url"><abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr>&#8209;Bereich 10</a>				</span>
+			</div>
+
+			<h1 class="title">10115</h1>
+
+			<table summary="" class="default zip summary" id="Bezirke">
+				<thead>
+				<tr>
+          <th>Bezirke mit <abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr> 10115</th>
+					<th>Ortsteile mit <abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr> 10115</th>
+				</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><a href="/Bezirke/Mitte">Mitte</a></td>
+						<td><a href="/Bezirke/Mitte/Ortsteile/Mitte">Mitte</a></td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+
+	</div>
+</div>
+
+<div id="content_body">
+	<div class="wrapper">
+		
+
+
+<div class="c_16 clearfix">
+
+	<div class="grid_12">
+
+
+  <div class="page-intro">
+    <p>Details zur Postleitzahl 10115 in Berlin, Deutschland &ndash; hausnummerngenau alle Straßen von <q>Ackerstraße</q> bis <q>Zinnowitzer Straße</q>
+    mit dieser <abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr>. Die <abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr> 10115    gibt es in den Berliner Bezirken
+    <a href="/Bezirke/Mitte">Mitte</a>    und den Ortsteilen
+    <a href="/Bezirke/Mitte/Ortsteile/Mitte">Mitte</a>.
+    Tipp: Du kannst auch eine Umkreissuche mit dieser Postleitzahl starten.</p>
+    <br>
+    <a href="https://maps.google.com/maps?q=52.532614,13.3777035(10115)" class="large button-v5" rel="nofollow" target="_blank">Auf Karte anzeigen</a>
+  </div>
+
+	<table summary="" class="default streets" id="Strassen">
+		<caption>
+			<h3>Straßenverzeichnis für <abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr> 10115</h3>
+
+			<ol class="index alphabetical-index clearfix">
+        <li><a href="#A">A</a></li>
+<li><a href="#B">B</a></li>
+<li><a href="#C">C</a></li>
+<li><span>D</span></li>
+<li><a href="#E">E</a></li>
+<li><span>F</span></li>
+<li><a href="#G">G</a></li>
+<li><a href="#H">H</a></li>
+<li><a href="#I">I</a></li>
+<li><a href="#J">J</a></li>
+<li><a href="#K">K</a></li>
+<li><a href="#L">L</a></li>
+<li><span>M</span></li>
+<li><a href="#N">N</a></li>
+<li><a href="#O">O</a></li>
+<li><a href="#P">P</a></li>
+<li><span>Q</span></li>
+<li><a href="#R">R</a></li>
+<li><a href="#S">S</a></li>
+<li><a href="#T">T</a></li>
+<li><span>U</span></li>
+<li><span>V</span></li>
+<li><a href="#W">W</a></li>
+<li><span>X</span></li>
+<li><span>Y</span></li>
+<li><a href="#Z">Z</a></li>
+			</ol>
+
+		</caption>
+		<thead>
+			<tr>
+				<th>&nbsp;</th>
+				<th>Straße</th>
+				<th>Hausnummern</th>
+				<th><abbr lang="de" title="Postleitzahl" xml-lang="de">PLZ</abbr></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th class="letter-index" id="A" rowspan="5">A</th>
+				<td class="street"><a href="/Strassen/Ackerstrasse-10115-13355-Berlin">Ackerstraße</a></td>
+				<td class="house-numbers">1-43, 144-174</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Am-Nordbahnhof-10115-Berlin">Am Nordbahnhof</a></td>
+				<td class="house-numbers">1-11</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Am-Pankepark-10115-Berlin">Am Pankepark</a></td>
+				<td class="house-numbers">2-53</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/An-der-Kieler-Bruecke-Berlin">An der Kieler Brücke</a></td>
+				<td class="house-numbers"></td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Anklamer-Strasse-10115-Berlin">Anklamer Straße</a></td>
+				<td class="house-numbers">1-60</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="B" rowspan="5">B</th>
+				<td class="street"><a href="/Strassen/Bergstrasse-10115-Berlin">Bergstraße</a></td>
+				<td class="house-numbers">1-81</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Bernauer-Strasse-10115-10435-13355-Berlin">Bernauer Straße</a></td>
+				<td class="house-numbers">1-37</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Borsigstrasse-10115-Berlin">Borsigstraße</a></td>
+				<td class="house-numbers">1-36</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Boyenstrasse-10115-Berlin">Boyenstraße</a></td>
+				<td class="house-numbers">23-46</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Brunnenstrasse-10115-10119-13355-Berlin">Brunnenstraße</a></td>
+				<td class="house-numbers">32-49, 138-160</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="C" rowspan="2">C</th>
+				<td class="street"><a href="/Strassen/Caroline-Michaelis-Strasse-10115-Berlin">Caroline-Michaelis-Straße</a></td>
+				<td class="house-numbers">1-17</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Chausseestrasse-10115-13353-Berlin">Chausseestraße</a></td>
+				<td class="house-numbers">1-61, 84-131</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="E" rowspan="3">E</th>
+				<td class="street"><a href="/Strassen/Eichendorffstrasse-10115-Berlin">Eichendorffstraße</a></td>
+				<td class="house-numbers">1-22</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Elisabeth-Schwarzhaupt-Platz-10115-Berlin">Elisabeth-Schwarzhaupt-Platz</a></td>
+				<td class="house-numbers">7</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Elisabethkirchstrasse-10115-Berlin">Elisabethkirchstraße</a></td>
+				<td class="house-numbers">1-21</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="G" rowspan="2">G</th>
+				<td class="street"><a href="/Strassen/Gartenstrasse-10115-13355-Berlin">Gartenstraße</a></td>
+				<td class="house-numbers">1-27, 87-115</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Grosse-Hamburger-Strasse-10115-Berlin">Große Hamburger Straße</a></td>
+				<td class="house-numbers">1-42</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="H" rowspan="3">H</th>
+				<td class="street"><a href="/Strassen/Habersaathstrasse-10115-Berlin">Habersaathstraße</a></td>
+				<td class="house-numbers">1-58</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Hannoversche-Strasse-10115-Berlin">Hannoversche Straße</a></td>
+				<td class="house-numbers">1-30</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Hessische-Strasse-10115-Berlin">Hessische Straße</a></td>
+				<td class="house-numbers">1-12</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="I" rowspan="2">I</th>
+				<td class="street"><a href="/Strassen/Ida-von-Arnim-Strasse-10115-Berlin">Ida-von-Arnim-Straße</a></td>
+				<td class="house-numbers">2-5</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Invalidenstrasse-10115-10557-Berlin">Invalidenstraße</a></td>
+				<td class="house-numbers">1-49, 80-162</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="J" rowspan="1">J</th>
+				<td class="street"><a href="/Strassen/Julie-Wolfthorn-Strasse-10115-Berlin">Julie-Wolfthorn-Straße</a></td>
+				<td class="house-numbers">1</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="K" rowspan="4">K</th>
+				<td class="street"><a href="/Strassen/Kieler-Strasse-10115-Berlin">Kieler Straße</a></td>
+				<td class="house-numbers">1-5</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Kleine-Hamburger-Strasse-10115-10117-Berlin">Kleine Hamburger Straße</a></td>
+				<td class="house-numbers">2-14, 24-27</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Koppenplatz-10115-Berlin">Koppenplatz</a></td>
+				<td class="house-numbers">1-14</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Krausnickstrasse-10115-Berlin">Krausnickstraße</a></td>
+				<td class="house-numbers">1-25</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="L" rowspan="2">L</th>
+				<td class="street"><a href="/Strassen/Liesenstrasse-10115-13355-Berlin">Liesenstraße</a></td>
+				<td class="house-numbers">3-8</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Linienstrasse-10115-10119-10178-Berlin">Linienstraße</a></td>
+				<td class="house-numbers">93-165</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="N" rowspan="1">N</th>
+				<td class="street"><a href="/Strassen/Novalisstrasse-10115-Berlin">Novalisstraße</a></td>
+				<td class="house-numbers">1-17</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="O" rowspan="1">O</th>
+				<td class="street"><a href="/Strassen/Oranienburger-Tor-10115-Berlin">Oranienburger Tor</a></td>
+				<td class="house-numbers"></td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="P" rowspan="4">P</th>
+				<td class="street"><a href="/Strassen/Pappelplatz-10115-Berlin">Pappelplatz</a></td>
+				<td class="house-numbers"></td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Pflugstrasse-10115-Berlin">Pflugstraße</a></td>
+				<td class="house-numbers">1-22</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Philippstrasse-10115-Berlin">Philippstraße</a></td>
+				<td class="house-numbers">1-24</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Platz-vor-dem-Neuen-Tor-10115-Berlin">Platz vor dem Neuen Tor</a></td>
+				<td class="house-numbers">1-6</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="R" rowspan="3">R</th>
+				<td class="street"><a href="/Strassen/Rheinsberger-Strasse-10115-10435-Berlin">Rheinsberger Straße</a></td>
+				<td class="house-numbers">1-18, 56-79</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Robert-Koch-Platz-10115-Berlin">Robert-Koch-Platz</a></td>
+				<td class="house-numbers">2-10</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Ruppiner-Strasse-10115-13355-Berlin">Ruppiner Straße</a></td>
+				<td class="house-numbers">2-11, 40-49</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="S" rowspan="8">S</th>
+				<td class="street"><a href="/Strassen/Sandkrugbruecke-10115-Berlin">Sandkrugbrücke</a></td>
+				<td class="house-numbers"></td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Scharnhorststrasse-10115-Berlin">Scharnhorststraße</a></td>
+				<td class="house-numbers">1-37</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Schlegelstrasse-10115-Berlin">Schlegelstraße</a></td>
+				<td class="house-numbers">2-32</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Schoenholzer-Strasse-10115-Berlin">Schönholzer Straße</a></td>
+				<td class="house-numbers">1-22</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Schroederstrasse-10115-Berlin">Schröderstraße</a></td>
+				<td class="house-numbers">1-15</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Schwartzkopffstrasse-10115-Berlin">Schwartzkopffstraße</a></td>
+				<td class="house-numbers">1-20</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Schwarzer-Weg-10115-Berlin">Schwarzer Weg</a></td>
+				<td class="house-numbers"></td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Strelitzer-Strasse-10115-13355-Berlin">Strelitzer Straße</a></td>
+				<td class="house-numbers">2-28, 48-73</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="T" rowspan="2">T</th>
+				<td class="street"><a href="/Strassen/Tieckstrasse-10115-Berlin">Tieckstraße</a></td>
+				<td class="house-numbers">1-41</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<td class="street"><a href="/Strassen/Torstrasse-10115-10119-Berlin">Torstraße</a></td>
+				<td class="house-numbers">153-234</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="W" rowspan="1">W</th>
+				<td class="street"><a href="/Strassen/Woehlertstrasse-10115-Berlin">Wöhlertstraße</a></td>
+				<td class="house-numbers">1-21</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+			<tr>
+				<th class="letter-index" id="Z" rowspan="1">Z</th>
+				<td class="street"><a href="/Strassen/Zinnowitzer-Strasse-10115-Berlin">Zinnowitzer Straße</a></td>
+				<td class="house-numbers">1-9</td>
+				<td class="zip secondary">10115</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+	</div>
+
+	<div class="grid_4">
+		<div class="sidebar-wrapper">
+  <div class="kca-wrapper clearfix">
+      <div class="clearfix">
+  <p class="adverts-caption">Anzeigen</p>
+  <a href="/kontakt" id="advertise_with_us">Werben Sie hier</a>
+</div>
+
+  <div class="kca-item">
+    <a href="https://ask-sicherheitsdienste.de/index-ask.html" rel="nofollow" target="_blank"><img alt="" src="https://berlin.kauperts.de/images/partners/partner-ask.gif?1652728637" /></a>
+  </div>
+  <div class="kca-item">
+    <a href="https://vertretung.allianz.de/ballwanz.kg/" rel="nofollow" target="_blank"><img alt="" src="https://berlin.kauperts.de/images/partners/partner-allianz.gif?1652728637" /></a>
+  </div>
+
+  </div>
+</div>
+
+
+
+	</div>
+
+</div>
+
+
+
+
+
+
+
+	</div>
+</div>
+
+<div id="footer" class="clearfix">
+  <div class="wrapper">
+    <div class="head clearfix">
+  <h1 class="current-city"><a href="/">Berlin</a></h1>
+</div>
+
+
+<div class="c_16 clearfix">
+  <div class="grid_3">
+    <ul class="fat-footer">
+      <li class="emphasize addresses">
+        <a href="/Adressen">Firmen und Adressen</a>
+      </li>
+      <li class="emphasize zips">
+        <a href="/plz"><abbr title="Postleitzahlen" lang="de" xml:lang="de">PLZ</abbr> Berlin</a>
+      </li>
+      <li class="emphasize streets">
+        <a href="/Strassenverzeichnis">Straßenverzeichnis Berlin</a>
+      </li>
+      <li class="emphasize districts">
+        <a href="/Bezirke">Berliner Bezirke und Ortsteile</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="grid_3">
+    <ul class="fat-footer">
+      <li>
+        <a href="?mobile=1">Mobile Website</a>
+      </li>
+      <li class="divide">
+        <a href="/kontakt" rel="nofollow">Kontakt</a>
+      </li>
+      <li>
+        <a href="/impressum" rel="nofollow">Impressum</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="grid_4 suffix_1">
+    <ul class="fat-footer">
+      <li>
+        <a href="/nutzungsbedingungen/nutzer" rel="nofollow">Allgemeine Nutzungsbedingungen (Nutzer)</a>
+      </li>
+      <li>
+        <a href="/nutzungsbedingungen/anbieter" rel="nofollow">Allgemeine Nutzungsbedingungen (Anbieter)</a>
+      </li>
+      <li>
+        <a href="/datenschutz" rel="nofollow">Datenschutzhinweise</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="foot">
+  <p class="legal">
+  &copy; kaupertmedia 2008&ndash;2023. Alle Rechte und Irrt&uuml;mer vorbehalten.
+  </p>
+</div>
+
+
+  </div>
+</div>
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["disableCookies"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//s.kauperts.de/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '1']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//s.kauperts.de/matomo.php?idsite=1&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+<script>
+  var cookieBarOptions = {
+    message: "Diese Website verwendet Cookies, um die Bedienfreundlichkeit zu erhöhen.",
+    acceptButton: true,
+    acceptText: "ok",
+    policyButton: true,
+    policyText: "Datenschutzhinweis",
+    policyURL: "https://berlin.kauperts.de/datenschutz"
+  };
+
+  jQuery(document).ready(function() {
+    jQuery.cookieBar(cookieBarOptions);
+  });
+</script>
+
+
+<script>
+  Cookie.init({name: 'kauperts_ui', expires: 90});
+</script>
+
+</body>
+</html>
